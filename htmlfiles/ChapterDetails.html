@@ -1,0 +1,1337 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.markdown-body .octicon-link:before {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: '\f05c';
+  vertical-align: middle;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+</style><title>ChapterDetails</title></head><body><article class="markdown-body"><p>目
+录</p>
+<p>第1章初识Go语言…</p>
+<p>1.1Go语言特性</p>
+<p>使用Go语言的项目</p>
+<p>13怎样安装Go语言开发包</p>
+<p>1.3.1 Windows版安装</p>
+<p>1,4搭建开发环“</p>
+<p>1.4.1集成开发环境 Jetbrains Goland</p>
+<p>1.4.2方便定义功能的编器一 Visual Studio Code-</p>
+<p>445</p>
+<p>第2章Go语言基本语法与使用</p>
+<p>2.1变量</p>
+<p>2.1.1声明变量</p>
+<p>19</p>
+<p>2.12初始化变量</p>
+<p>2.13多个变量同时赋值</p>
+<p>2.1.4匿名变量一一没有名字的变量</p>
+<p>2.2数据类型</p>
+<p>2.2.1整型</p>
+<p>2.2.2浮点型</p>
+<p>2.2.3示例:输出正弦函数(Sin)图像</p>
+<p>2.2.4布尔型</p>
+<p>2.2.5字符串</p>
+<p>2.2.6字符</p>
+<p>2.2.7切片一一能动态分配的空间</p>
+<p>2.3转换不同的数据类型“</p>
+<p>2.4指针………</p>
+<p>a4s5689123486</p>
+<p>2.4.1认识指针地址和指针类型</p>
+<p>2.4.2从指针获取指针指向的值</p>
+<p>2.4.3使用指针修改值</p>
+<p>2.4.4示例:使用指针变量获取命令行的输入信息</p>
+<p>2.4.5创建指针的另一种方法newO函数</p>
+<p>2.5变量生命期一一变量能够使用的代码范围</p>
+<p>2.5.1什么是根</p>
+<p>2.5.2</p>
+<p>2.5.3变量逃追( Escape Analysi</p>
+<p>自动决定变量分配方式,提高运行效率</p>
+<p>2.6字符串应用</p>
+<p>2.6.1计算字符串长度</p>
+<p>23667</p>
+<p>2.6,2追历字符串一一获取每一个字符串元素</p>
+<p>2.6.3获取字符串的某一段字</p>
+<p>2.6.4修改字符申</p>
+<p>2.6.5连接字符串</p>
+<p>2.6.6格式化</p>
+<p>7示例:Basc64编码一电子邮件的基础编码格式</p>
+<p>901</p>
+<p>2.6.8示例:从NI配置文件中查询需要的值</p>
+<p>2.7常量一一恒定不变的值</p>
+<p>2.7.1枚举一一一组常量值</p>
+<p>2.7.2将枚举值转换为字符串</p>
+<p>2.8类型别名( Type Alias)</p>
+<p>2.8.1区分类型别名与类型定义</p>
+<p>2.82非本地类型不能定义方法“</p>
+<p>62</p>
+<p>2.8.3在结构体成员嵌入时使用别名</p>
+<p>第3章容器:存储和组织数据的方式</p>
+<p>3.1数组一一固定大小的连续空间</p>
+<p>3.1.1声明数组</p>
+<p>3.1.2初始化数组</p>
+<p>3.2切片(sice)一动态分配大小的连续空间</p>
+<p>3.2.1从数组或切片生成新的切片</p>
+<p>3.2.2声明切片</p>
+<p>3.2.3使用 maked函数构造切片</p>
+<p>32.4使用 append0函数为切片添加元素</p>
+<p>32.5复制切片元素到另一个切片</p>
+<p>3.26从切片中除元素</p>
+<p>3.3映射(map)-建立事物关联的容器</p>
+<p>11乃4%mm</p>
+<p>3.3.1添加关联到mp并访问关联和数据</p>
+<p>3.32適历ma即p的“键值对”一一访每一个map中的关联关系</p>
+<p>3.3.3使用 deleted)函数从mp中除键值对</p>
+<p>3.3.4清空map中的所有元素</p>
+<p>3.3.5能够在并发环境中使用的map- syne. Map</p>
+<p>3.4列表(list)-一可以快速增删的非连续空间的容器</p>
+<p>3.4.1初始化列表“……一</p>
+<p>3.42在列表中插入元素</p>
+<p>3.4.3从列表中删除元</p>
+<p>3.4.4历列表一一访问列表的每一个元素</p>
+<p>第4章流程控糊</p>
+<p>4.1条件判断(in)</p>
+<p>42构建循环(for)</p>
+<p>for中的初始语句一一开始循环时执行的语句</p>
+<p>4.2,2for中的条件表达式一一控制是香循环的开关</p>
+<p>4.23for中的结東语句一每次循环结東时执行的语句</p>
+<p>示例:九九乘法表</p>
+<p>4键值环( for range)-一直接获得对象的索引和数据</p>
+<p>4.4.1遍历数组,切片一一获得索引和元素</p>
+<p>4.42遍历字符串一一获得字符</p>
+<p>4.4.3通历map一获得map的键和值</p>
+<p>4.4遥历通道( channel)接收通道数据</p>
+<p>4.4.5在通历中选择希望获得的变量……</p>
+<p>4.5分支选择( switch)拥有多个条件分支的判</p>
+<p>4.51基本写法…</p>
+<p>跨越case的 through兼容C语言的case设计</p>
+<p>4.6跳转到指定代标(goto)</p>
+<p>使用gto退出多层循环</p>
+<p>92归4%%%%”%四</p>
+<p>4.6.2使用goto集中处理错误</p>
+<p>4.63统一错误处理</p>
+<p>4.7跳出指定循环(beak)一可以跳出多层循环</p>
+<p>4.8继续下一次循环( contnue)</p>
+<p>第5章函数( function</p>
+<p>5,1声明函数</p>
+<p>5.1.1普通函数的声明形</p>
+<p>5.12参数类型的简写</p>
+<p>5.1.3函数的返回值</p>
+<p>5.1.4调用函数“…</p>
+<p>104</p>
+<p>5.1.5示例:将“秒”解析为时间单位</p>
+<p>104</p>
+<p>5.1.6示例:函数中的参数传递效果测试</p>
+<p>5.2函数变量一一把函数作为值保存到变量中</p>
+<p>示例:字符串的链式处理一操作与数据分离的设计技巧</p>
+<p>5.4匠名函数一一没有函数名字的函数…</p>
+<p>5.4.1定义一个匿名函数一</p>
+<p>5.4.2匿名函数用作回调函数</p>
+<p>5.43使用匿名函数实现操作封装</p>
+<p>5.5函数类型实现接口一把函数作为接口来调用</p>
+<p>55.1结构体实现接口…一</p>
+<p>115</p>
+<p>5.5,2函数体实现接口</p>
+<p>5.53HTP包中的例子</p>
+<p>5.6闭包( Closure)-引用了外部变量的匿名函数</p>
+<p>5.6.1在闭包内部修改引用的变量</p>
+<p>5.62示例:闭包的记忆效应</p>
+<p>s'2</p>
+<p>5.63示例:闭包实现生成器</p>
+<p>5.7可变参数一一参数数量不固定的函数形式</p>
+<p>5.7.1fmt包中的例子</p>
+<p>5.7.2遍历可变参数列表一一获取每一个参数的值</p>
+<p>5.7.3获得可变参数类型一一获得每一个参数的类型</p>
+<p>5.7,4在多个可变参数函数中传递参数</p>
+<p>5.8延迟执行语句( defer)</p>
+<p>5.8.1多个延迟执行语句的处理序</p>
+<p>5.82使用延退执行语句在函数退出时释放资源</p>
+<p>memm</p>
+<p>59处理运行时发生的错误</p>
+<p>5.9.net包中的例子</p>
+<p>131</p>
+<p>59.2错误接口的定义格式</p>
+<p>132</p>
+<p>59.3自定义一个错误…</p>
+<p>5.94示例:在解析中使用自定义铅误</p>
+<p>5.10宕机( panic)-一程序终止运行</p>
+<p>5.10.1手动触发宕机</p>
+<p>5.10.2在运行依赖的必备资源缺失时主动触发容机</p>
+<p>5.10.3在机时触发延退执行语句</p>
+<p>S.11宕机恢复( recover)-防止程序崩溃</p>
+<p>5.11.1让程序在崩溃时继续执行</p>
+<p>1.2 pinic和 recover l的关系</p>
+<p>第6章结构体( struct</p>
+<p>6.1定义结构体…</p>
+<p>141</p>
+<p>6.2实例化结构体一一为结构体分配内存并初始化</p>
+<p>m142</p>
+<p>2.1基本的实例化形式……</p>
+<p>142</p>
+<p>6.2,2创建指针类型的结构体</p>
+<p>143</p>
+<p>623取结构体的地址实例化</p>
+<p>63初始化结构体的成员变量</p>
+<p>63.1使用“键值对”初始化结构体</p>
+<p>6.32使用多个值的列表初始化结构体</p>
+<p>44</p>
+<p>6.3.3初始化匿名结构体…</p>
+<p>6.4构造函数一一结构体和类型的一系列初始化操作的函数封装</p>
+<p>6.4.1多种方式创建和初始化结构体一一模拟构造函数重截</p>
+<p>64.2带有父子关系的结构体的构造和初始化一一模拟父级构造调用</p>
+<p>65方法…一………ー</p>
+<p>150</p>
+<p>6.5.1为结构体添加方法</p>
+<p>6.52接收器一一方法作用的目标</p>
+<p>6.53示例:二维矢量模拟玩家移</p>
+<p>65.4为类型添加方法…一…………</p>
+<p>6.55示倒:使用事件系统实现事件的响应和处理</p>
+<p>6.6类型内嵌和结构体内嵌</p>
+<p>6.6.1声明结构体内嵌</p>
+<p>6.62结构内嵌特性</p>
+<p>6.63使用组合思想描述对象特</p>
+<p>00234</p>
+<p>6.6.4始化结构体内嵌</p>
+<p>6.65初始化内嵌匿名结构</p>
+<p>6.6.6成员名字冲突</p>
+<p>6.7示例:使用匿名结构体分离JSON数据</p>
+<p>第7章接口( interface</p>
+<p>mw</p>
+<p>7.1声明接口“…</p>
+<p>7.1.1接口声明的格式</p>
+<p>7,1,2开发中常见的接口及写法</p>
+<p>7.2实现接口的条件</p>
+<p>72.1接口被实现的条件一:接口的方法与实现接口的类型方法格式一致</p>
+<p>882228</p>
+<p>7.22条件二:接口中所有方法均技实现</p>
+<p>7.3理解类型与接口的关系…</p>
+<p>7.3.1一个类型可以实现多个接口</p>
+<p>7.3.2多个类型可以实现相同的接口</p>
+<p>7.4示例:便于扩展输出方式的日志系统</p>
+<p>66889</p>
+<p>7.5示例:使用接口进行数据的排序…</p>
+<p>7.5.1使用 sort Interface接口进行排序</p>
+<p>195</p>
+<p>7.5.2常见类型的便捷排序</p>
+<p>7.5.3对结构体数据进行排序</p>
+<p>7.6接口的嵌套组合将多个接口放在一个接口内</p>
+<p>7.7在接口和类型间转换</p>
+<p>99</p>
+<p>7.7.1类型断言的格式</p>
+<p>7.7.2将接口转换为其他接口</p>
+<p>7.7.3将接口转换为其他类型</p>
+<p>7.8空接口类型( interface!)一能保存所有值的类型</p>
+<p>7.8.1将值保存到空接口</p>
+<p>7.8.2从空接口获取值</p>
+<p>7.8.3空接口的值比较“</p>
+<p>7.9示例:使用空接口实现可以保存任意值的字典</p>
+<p>7.10类型分支一一批量判断空接口中变量的类型</p>
+<p>7.10.1类型断言的书写格式</p>
+<p>01</p>
+<p>7.10.2使用类型分支判断基本类型</p>
+<p>7.10.3使用类型分支判断接口类型</p>
+<p>7.11示例:实现有限状态机(FSM)</p>
+<p>第8章包( package)</p>
+<p>8.1工作目录( GOPATH)</p>
+<p>使用命令行查看 GOPATH信息</p>
+<p>zmm</p>
+<p>8.1.2使用 GOPATH的工程结构</p>
+<p>228</p>
+<p>8.1.3设置和使用 GOPATH</p>
+<p>8.1.4在多项目工程中使用GO</p>
+<p>82创建包 package-一编写自已的代码扩展</p>
+<p>8.3导出标识符一一让外部访问包的类型和值</p>
+<p>8.3.1导出包内标识符</p>
+<p>8.32导出结构体及接口成员</p>
+<p>8.4导入包( Import)--在代码中使用其他的代码</p>
+<p>8.4.1默认导入的写法</p>
+<p>a2m2</p>
+<p>8.4.2导入包后自定义引用的包名</p>
+<p>8.4.3匿名导入包一一只导入包但不使用包内类型和数值</p>
+<p>8.4.4包在程序启动前的初始化入口:init…</p>
+<p>8.4.5理解包导入后的iniu0函数初始化顺序</p>
+<p>8.5示例:工厂模式自动注册一管理多个包的结构体</p>
+<p>第9章并发</p>
+<p>9.1轻量级线程( goroutine)一根据需要随时创建的“线程</p>
+<p>9.1.使用普通函数创建 goroutine</p>
+<p>9.1.2使用匿名函数创建 goroutine</p>
+<p>9.1.3调整并发的运行性能( GOMAXPROCS)</p>
+<p>9.14理解井发和并行</p>
+<p>5G0语言的协作程序( coroutine)和普通的协作程序( coroutine)</p>
+<p>92通道( channel)一在多个 goroutine I间通信的管道</p>
+<p>川4</p>
+<p>9.2.2声明通道类型</p>
+<p>9.2.3创建通道“</p>
+<p>9.,2.4使用通道发送数据</p>
+<p>9.25使用通道接收数据</p>
+<p>9.2.6示例:并发打印</p>
+<p>252</p>
+<p>9.2.7单向通道一一通道中的单行道</p>
+<p>9._2.8带级冲的通道“</p>
+<p>…“25</p>
+<p>9.29通道的多路复用一一同时处理接收和发送多个通道的数据</p>
+<p>92.10示例:模拟远程过程调用(RPC</p>
+<p>9.2.11示倒:使用通道响应计时器的事件</p>
+<p>92.12关闭通道后继续使用通道</p>
+<p>3示例: Telnet回音服务器TCP服务器的基本结构</p>
+<p>94同步一保证并发环境下数据访问的正确性</p>
+<p>9.4.1兗态检测一一检测代码在并发环境下可能出现的问题</p>
+<p>9.4.2互斥( sync Mutex)-一保证同时只有一个 goroutine可以访问共享簧源</p>
+<p>9.4.3读写互斥锁(sne. Rwmutex)一-在读比写多的环境下比互斥锁更高效</p>
+<p>10。44等待组(mWar)保证在并发环境中完成指定数量的任务</p>
+<p>10.1反射的类型对象( reflect Type)</p>
+<p>3sHmmzmma加加</p>
+<p>10.1,1理解反射的类型(Type)与种类(Kind)</p>
+<p>0.1.2指针与指针指向的元素</p>
+<p>10.13使用反射获取结构体的成员类型</p>
+<p>10.14结构体标签( Struct Ta)一对结构体字段的积外信息标</p>
+<p>0.2反射的值对象( reflect Value</p>
+<p>102.1使用反射值对象包装任意值</p>
+<p>10.22从反射值対象获取被包装的值</p>
+<p>10.23使用反射访问结构体的成员字段的值</p>
+<p>102.4反射对象的空和有效性判断</p>
+<p>1025使用反射值对象修改变量的值</p>
+<p>10.26通过类型创建类型的实例</p>
+<p>102.7使用反射调用函数</p>
+<p>10.3示例:将结构体的数据保存为JSON格式的文本数据</p>
+<p>第11章编译与工具…</p>
+<p>111编译( go build)</p>
+<p>1.1 go build无参数译</p>
+<p>1.12 go build+文件列表</p>
+<p>1.13 go build+包</p>
+<p>1..4 go build编译时的附加参数</p>
+<p>112编译后运行( go run)</p>
+<p>测况凝测2期测m00u</p>
+<p>113编译井安装( go instal)</p>
+<p>114一键获取代码、编译并安装( go get</p>
+<p>11.4.1远程包的路径格式</p>
+<p>1142 go get+远程包</p>
+<p>114.3 go get使用时的附加参数</p>
+<p>115测试( go test)</p>
+<p>11.5.1单元测试一一测试和验证代码的框架</p>
+<p>1152基准测试一一获得代码内存占用和运行效率的性能数</p>
+<p>16性能分析( go pprof)-一发现代码性能问题的调用位置</p>
+<p>1.6.1安装第三方图形化显式分析数据工具( Graphviz)</p>
+<p>1.6.2安装第三方性能分析来分析代码包</p>
+<p>116.3性能分析代码</p>
+<p>第12章“避坑”与技巧</p>
+<p>12.1合理地使用并发特性</p>
+<p>12.1.1了解 goroutine的生命期时再创建 porous</p>
+<p>2.12避免在不必要的地方使用通道</p>
+<p>12.2反射:性能和灵活性的双引剑</p>
+<p>12.3接口的mi判断</p>
+<p>12.4mp的多键索引一一多个数值条件可以同</p>
+<p>12.4.!基于哈希值的多键索引及查…、查询</p>
+<p>12.4.2利用map特性的多键索引及查询</p>
+<p>mh03m4迎</p>
+<p>12.43总结………</p>
+<p>12.5优雅地处理TCP粘包…</p>
+<p>第13章实战演练剖析 cellnet网络库设计并实现 Socket聊天功能</p>
+<p>13.1了解 celle I网络库特性、流程及果</p>
+<p>13.1.1 cellnet网络库的特性一</p>
+<p>13.12 cellnet网络库的流程及果构</p>
+<p>132管理 TCP Socket连接</p>
+<p>13.2.1理解 Socke的事件类型</p>
+<p>13.2.2管理事件回调“</p>
+<p>132.3连接器( Connector)</p>
+<p>13.2.4会话管理( Sessionman</p>
+<p>13.2.5接受器( Acceptor)</p>
+<p>13.3组织接收和发送数据流程的 Socket会话( Session</p>
+<p>13.3.1在会话开始时启动 goroutine和派发事件</p>
+<p>会话中的接收数据环</p>
+<p>13.33会话中的发送数据循环</p>
+<p>13.4排队处理事件的事件队列( Eventqueue</p>
+<p>13.4.1实现事件队列</p>
+<p>3.42使用不同的事件队列模式处理数据“</p>
+<p>sssysMhwwmmnnm瑚</p>
+<p>13.5消息编码( codec.)-i让clet支持消息的多种编码格式</p>
+<p>13.6消息元信息( Messagemeta)一消息ID、消息名称和消息类型的关联关系</p>
+<p>136.1理解消息元信息</p>
+<p>13.6.2注局消息元信息</p>
+<p>13.6.3示例:使用消息元信息</p>
+<p>13.6.4实现消息的编码( Encodemessageo))和解码( Decodemessage0)函数…382</p>
+<p>13.7接收和发送封包( packet</p>
+<p>13.7.1接收可变长度封包</p>
+<p>13.7.2了解封包数据读取器( Packetreade</p>
+<p>13.7.3了解封包数据写入器( Packetwriter</p>
+<p>13.7.4读取自定义封包及数据</p>
+<p>13.7.5写入自定义封包及数据</p>
+<p>13.7.6响应消息处理事件</p>
+<p>13.8使用 cellnet网络库实现天功能</p>
+<p>13.8.1定文天协议</p>
+<p>13.8.2实現客户端功能</p>
+<p>0明明</p>
+<p>13.83实现服务器功能</p>
+<p>13.84运行哪天服务器和客户端</p>
+</article></body></html>
